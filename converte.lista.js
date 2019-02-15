@@ -1,9 +1,9 @@
 function nome(pessoas) {
-  
+	return pessoas.map((nome) => nome !== '');
 }
 
 function nomeComNota(pessoas) {
-  
+	
 }
 
 function upperCase (pessoas) {

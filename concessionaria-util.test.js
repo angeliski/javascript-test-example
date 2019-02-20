@@ -19,7 +19,7 @@ test('verifica que não é um golf', (done) => {
 
 test('dá erro quando não enviar parametro', (done) => {
   calendarioUtil
-  .ehGolf()
+  .ehGolf(null)
   .then(() => {
     done.fail(new Error('Não deveria chegar aqui!'))
   }).catch((msg) => {

@@ -1,11 +1,9 @@
 function ehGolf(carro) {
 	return new Promise (function(resolve, reject){
-		if(carro == 'golf'){
-			resolve(true)
-		}else if(carro == undefined){
+		if(carro){
+			resolve(carro === 'golf')
+		}else {
 			reject("Não foi informada nenhum carro!")
-		}else{
-			resolve(false)
 		} 
 	})
 }

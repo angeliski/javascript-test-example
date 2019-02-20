@@ -1,11 +1,15 @@
 function ehGolf(carro) {
-	if(carro === 'golf'){
-		return true;
-	}else{
-		return false;
-	}
+	return new Promise (function(resolve, reject){
+		if(carro == 'golf'){
+			resolve(true)
+		}else if(carro == undefined){
+			reject("Não foi informada nenhum carro!")
+		}else{
+			resolve(false)
+		} 
+	})
 }
-
-module.exports = {
-  ehGolf
-};
+	
+	module.exports = {
+	ehGolf
+	};
